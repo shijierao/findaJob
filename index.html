@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset = "utf-8">
+	<title>Job</title>
+	<meta name="author" content="Shijie Rao">
+	<meta name="description" content="hw2 for 67-328">
+
+	<!-- for jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<!-- for css foundation -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- local js files -->
+	<script type="text/javascript" src="javascripts/main.js"></script>
+	<script type="text/javascript" src="javascripts/localAjex.js"></script>
+	<script type="text/javascript" src="javascripts/githubApiRequest.js"></script>
+
+	<!-- local css file -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+	<nav class = "navbar navbar-default">
+		<span class="navbar-brand"> shijiera 67-328 FIND ME A JOB</span>
+	</nav>
+
+	<div class = "container">
+		<h1 id="title" data-main="lol">Find Me A Job</h1>
+		<h4><button id="showMission" class="btn btn-link">our mission</button></h4>
+		<!-- area for showing mission statement -->
+		<div id="mission" class='col-md-8 col-md-offset-2'>
+		</div>
+		<div class ="row">
+			<div id="partOneArea" class='col-md-8 col-md-offset-3'>
+				<form id="search">
+					<div class='col-md-4'>
+						<div class="form-group">
+						    <input type="text" class="form-control" id="func" value="" placeholder="Skill">
+						</div>
+					</div>
+					<div class='col-md-4'>
+						<div class="form-group">
+						    <input type="text" class="form-control" id="loc" value="" placeholder="Location">
+						</div>
+					</div>
+					<div class='col-md-2'>
+					<button class="btn btn-primary" type="submit">Find</button>
+					</div>
+				</form>
+			</div>
+			<!-- area for showing job details -->
+			<div id="jobDetail" class='col-md-10 col-md-offset-1'>
+			</div>
+			<!-- area for showing all jobs -->
+			<div id="jobs" class='col-md-10 col-md-offset-1' >
+			</div>
+		</div>
+	</div>
+</body>
+</html>
